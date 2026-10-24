@@ -1,0 +1,6 @@
+title: "SJCET First Years — Class Wall"
+description: "Every card on this wall was shipped through a pull request."
+
+collections:
+  teams:
+    output: false
