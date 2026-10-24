@@ -66,7 +66,19 @@ layout: null
     }
     .card p { margin: 0; }
     .empty { grid-column: 1 / -1; text-align: center; color: var(--muted); }
-    footer { text-align: center; color: var(--muted); padding: 0 16px 32px; font-size: 0.9rem; }
+    footer { text-align: center; color: var(--muted); padding: 0 16px 40px; font-size: 0.95rem; }
+    footer a { color: inherit; }
+    .btn {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: var(--ink);
+      color: var(--bg) !important;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
   </style>
 </head>
 <body>
@@ -91,6 +103,9 @@ layout: null
     {% endfor %}
   </main>
 
-  <footer>Want your card here? Open a pull request — see the README in this repository.</footer>
+  <footer>
+    <a class="btn" href="https://github.com/jjohne/class-wall/new/main/_teams?filename=team-yourteamname.md&amp;value=---%0Ateam%3A%20%22Your%20team%20name%22%0Amembers%3A%20%22First%20names%20only%2C%20separated%20by%20commas%22%0Adream_project%3A%20%22One%20app%20or%20project%20you%20would%20love%20to%20build%22%0Afun_fact%3A%20%22One%20fun%20fact%20about%20your%20team%22%0Acolour%3A%20%22your%20favourite%20colour%2C%20e.g.%20orange%22%0A---%0A" target="_blank" rel="noopener">➕ Add your team card</a>
+    <p><a href="https://github.com/jjohne/class-wall#readme" target="_blank" rel="noopener">Step-by-step instructions</a> · <a href="https://github.com/jjohne/class-wall/pulls" target="_blank" rel="noopener">Review a pull request</a></p>
+  </footer>
 </body>
 </html>
